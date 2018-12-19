@@ -3,13 +3,12 @@
  */
 package at.phatbl.kash
 
-class App {
-    val greeting: String
-        get() {
-            return "Hello world."
-        }
-}
+val prompt = "$ "
 
 fun main(args: Array<String>) {
-    println(App().greeting)
+    while(true) {
+        print(prompt)
+        val line = readLine()
+        println(line)
+    }
 }
